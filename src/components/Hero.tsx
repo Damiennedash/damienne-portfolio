@@ -68,7 +68,7 @@ export default function Hero() {
 
             {/* Tools */}
             <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-              {["Photoshop", "Illustrator", "Canva", "Photographie"].map(s => (
+              {["Photoshop", "Illustrator", "Canva", "Figma", "Photographie"].map(s => (
                 <span key={s} style={{ background: "#fff", border: "1px solid #E0DEDA", borderRadius: 100, padding: "6px 14px", fontSize: 12, fontWeight: 600, color: "#1B3A2D" }}>
                   {s}
                 </span>
