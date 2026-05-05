@@ -17,9 +17,9 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="accueil" style={{ background: "#F9F6EF", minHeight: "100vh" }}
+    <section id="accueil" style={{ background: "#F9F6EF", minHeight: "100vh", overflowX: "hidden" }}
       className="flex items-center">
-      <div className="w-full max-w-7xl mx-auto px-6 pt-28 pb-16">
+      <div className="w-full max-w-7xl mx-auto pt-28 pb-16" style={{ padding: "112px 24px 64px" }}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           {/* ─── LEFT ─── */}
@@ -33,7 +33,7 @@ export default function Hero() {
 
             {/* Heading */}
             <div>
-              <h1 style={{ fontSize: "clamp(36px, 5vw, 58px)", fontWeight: 900, lineHeight: 1.1, color: "#111" }}>
+              <h1 style={{ fontSize: "clamp(28px, 8vw, 58px)", fontWeight: 900, lineHeight: 1.1, color: "#111" }}>
                 Je suis{" "}
                 <span style={{ color: "#E8A020", fontStyle: "italic" }}>Damienne,</span>
               </h1>
@@ -82,7 +82,7 @@ export default function Hero() {
 
               {/* Gold accent strip */}
               <div style={{
-                position: "absolute", top: 24, bottom: 24, left: -12,
+                position: "absolute", top: 24, bottom: 24, left: 0,
                 width: 6, background: "#E8A020", borderRadius: 99
               }} />
 
@@ -117,10 +117,10 @@ export default function Hero() {
 
               {/* Floating stat card */}
               <div style={{
-                position: "absolute", top: 24, right: -20,
+                position: "absolute", top: 24, right: 12,
                 background: "#fff", borderRadius: 16, padding: "12px 16px",
                 boxShadow: "0 8px 32px rgba(0,0,0,0.12)",
-                textAlign: "center", minWidth: 90
+                textAlign: "center", minWidth: 80
               }}>
                 <p style={{ fontSize: 22, fontWeight: 900, color: "#E8A020" }}>10+</p>
                 <p style={{ fontSize: 11, color: "#888", marginTop: 2 }}>Projets</p>
