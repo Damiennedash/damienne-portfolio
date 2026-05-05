@@ -30,8 +30,8 @@ export default function Gallery() {
   const visible = showAll ? photos : photos.slice(0, INITIAL_COUNT);
 
   return (
-    <section id="photos" style={{ background: "#fff", padding: "100px 0" }}>
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="photos" style={{ background: "#fff", padding: "80px 0", overflowX: "hidden" }}>
+      <div className="max-w-7xl mx-auto" style={{ padding: "0 24px" }}>
 
         {/* ── Header ── */}
         <div style={{ textAlign: "center", marginBottom: 48 }}>

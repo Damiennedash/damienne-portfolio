@@ -10,8 +10,8 @@ const skills = ["Design Graphique", "Création d'Affiches", "Identité Visuelle"
 
 export default function About() {
   return (
-    <section id="apropos" style={{ background: "#1B3A2D", padding: "100px 0" }}>
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="apropos" style={{ background: "#1B3A2D", padding: "80px 0", overflowX: "hidden" }}>
+      <div className="max-w-7xl mx-auto" style={{ padding: "0 24px" }}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* ─── LEFT — Portrait photo ─── */}

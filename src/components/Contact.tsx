@@ -84,8 +84,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" style={{ background: "#F9F6EF", padding: "100px 0" }}>
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="contact" style={{ background: "#F9F6EF", padding: "80px 0", overflowX: "hidden" }}>
+      <div className="max-w-7xl mx-auto" style={{ padding: "0 24px" }}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
           {/* ─── LEFT ─── */}
@@ -120,11 +120,11 @@ export default function Contact() {
                       {info.label}
                     </p>
                     {info.href ? (
-                      <a href={info.href} style={{ color: "#1B3A2D", fontWeight: 700, fontSize: 14, textDecoration: "none", marginTop: 2, display: "block" }}>
+                      <a href={info.href} style={{ color: "#1B3A2D", fontWeight: 700, fontSize: 14, textDecoration: "none", marginTop: 2, display: "block", wordBreak: "break-word", overflowWrap: "break-word" }}>
                         {info.value}
                       </a>
                     ) : (
-                      <p style={{ color: "#1B3A2D", fontWeight: 700, fontSize: 14, marginTop: 2 }}>{info.value}</p>
+                      <p style={{ color: "#1B3A2D", fontWeight: 700, fontSize: 14, marginTop: 2, wordBreak: "break-word" }}>{info.value}</p>
                     )}
                   </div>
                 </div>

@@ -83,8 +83,8 @@ export default function Posters() {
   const visible = showAll ? filtered : filtered.slice(0, INITIAL);
 
   return (
-    <section id="creations" style={{ background: "#F9F6EF", padding: "100px 0" }}>
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="creations" style={{ background: "#F9F6EF", padding: "80px 0", overflowX: "hidden" }}>
+      <div className="max-w-7xl mx-auto" style={{ padding: "0 24px" }}>
 
         {/* ── Header ── */}
         <div style={{ marginBottom: 48 }}>
@@ -122,8 +122,8 @@ export default function Posters() {
         {/* ── Pinterest grid (square cards) ── */}
         <div style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
-          gap: 16,
+          gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 180px), 1fr))",
+          gap: 12,
         }}>
           {visible.map((p, i) => (
             <div

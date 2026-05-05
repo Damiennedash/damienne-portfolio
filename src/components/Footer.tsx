@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer style={{ background: "#1B3A2D", padding: "32px 0" }}>
-      <div className="max-w-7xl mx-auto px-6" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
+      <div className="max-w-7xl mx-auto" style={{ padding: "0 24px", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
 
         {/* Logo */}
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
